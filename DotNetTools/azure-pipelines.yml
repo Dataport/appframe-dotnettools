@@ -1,0 +1,38 @@
+# DotNetTools build definition
+
+trigger:
+  branches:
+      include:
+      - master
+  paths:
+    include:
+    - DotNetTools
+
+variables:
+  buildConfiguration: 'Release'
+  buildPlatform: 'Any CPU'
+
+pool:
+  name: Herakles-1
+  demands:
+  - msbuild
+  - visualstudio
+  - vstest
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: \!BuildTemplates
+      ref: refs/tags/v1.1
+
+steps:
+- template: appframedotnet-package.yml@templates
+  parameters:
+    solution: 'DotNetTools/DotNetTools.sln'
+    nugetConfigPath: 'DotNetTools/NuGet.Config'
+    packageProjectDirectory: 'DotNetTools/DotNetTools'
+- task: chrismason.vsts-docfxtasks.docfx-extension-build-task.DocFxTask@0
+  displayName: 'Create DocFx Documentation'
+  inputs:
+    solution: '_Dokumentation/docfx.json'
