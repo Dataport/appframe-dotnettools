@@ -32,7 +32,19 @@ steps:
     solution: 'DotNetTools/DotNetTools.sln'
     nugetConfigPath: 'DotNetTools/NuGet.Config'
     packageProjectDirectory: 'DotNetTools/DotNetTools'
+
+# Dokumentation bauen und in Verzeichnis hinterlegen
 - task: chrismason.vsts-docfxtasks.docfx-extension-build-task.DocFxTask@0
   displayName: 'Create DocFx Documentation'
   inputs:
     solution: '_Dokumentation/docfx.json'
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: 'DotNetTools/DotNetTools/bin/Debug/netstandard2.0/_Dokumentation/docs'
+    Contents: '**/*.*'
+    TargetFolder: '$(build.artifactstagingdirectory)/Dokumentation'
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
