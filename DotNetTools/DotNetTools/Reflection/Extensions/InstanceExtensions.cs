@@ -66,8 +66,8 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions
             foreach (var entry in typeof(TInstance).GetProperties())
             {
                 var prop = entry;
-                var primaryValue = prop.GetGetMethod().Invoke(instance, null);
-                var secondaryValue = prop.GetGetMethod().Invoke(source, null);
+                var primaryValue = prop.GetGetMethod()?.Invoke(instance, null);
+                var secondaryValue = prop.GetGetMethod()?.Invoke(source, null);
 
                 // Prüft, ob das Primär-Property entweder Nothing ist, oder ein Value-Type, in dem lediglich der Default-Value steht
 
@@ -77,7 +77,7 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions
                     // Falls die Bedingungen erfüllt sind, wird das Property mit dem Wert des Sekundär-Propertys überschrieben
                     // Im Zweifelsfall kann das natürlich auch Nothing oder ein Default-Value sein; es ist aber sichergestellt, dass niemals
                     // gesetzte Werte des Primär-Propertys überschrieben werden.
-                    prop.GetSetMethod().Invoke(instance, new[] { secondaryValue });
+                    prop.GetSetMethod()?.Invoke(instance, new[] { secondaryValue });
                 }
             }
         }

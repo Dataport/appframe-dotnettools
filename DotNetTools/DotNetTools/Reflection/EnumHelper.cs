@@ -36,7 +36,7 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Reflection
         public IEnumerable<object> GetValuesWhereAttribute<TAttribute>(Func<TAttribute, bool> condition) where TAttribute : Attribute
         {
             return GetValues()
-                .Select(v => new Tuple<object, TAttribute>(v, _enumType.GetField(v.ToString()).GetCustomAttribute<TAttribute>()))
+                .Select(v => new Tuple<object, TAttribute>(v, v == null ? null : _enumType.GetField(v.ToString() ?? string.Empty)?.GetCustomAttribute<TAttribute>()))
                 .Where(kvp => kvp.Item2 != null && condition(kvp.Item2))
                 .Select(kvp => kvp.Item1);
         }
