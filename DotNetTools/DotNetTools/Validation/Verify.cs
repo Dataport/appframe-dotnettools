@@ -15,6 +15,7 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Validation
         /// <returns>Eine überprüfbare Bedingung.</returns>
         public static Condition<TType> That<TType>(TType objectToVerify, string nameOfObject)
         {
+            // TEMP: Test für automatische Code-Übernahme.
             return new Condition<TType>(objectToVerify, nameOfObject);
         }
     }
