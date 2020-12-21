@@ -43,7 +43,6 @@
 
   <ItemGroup>
     <Folder Include="Validation\" />
-    <Folder Include="Text\" />
   </ItemGroup>
 
 </Project>

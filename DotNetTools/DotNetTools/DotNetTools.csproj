@@ -5,13 +5,13 @@
     <AssemblyName>Dataport.AppFrameDotNet.DotNetTools</AssemblyName>
     <RootNamespace>Dataport.AppFrameDotNet.DotNetTools</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.2.0</Version>
+    <Version>3.3.0</Version>
     <Description>Toolsammlung zur Ergänzung von .NET-Basistypen und Basisfunktionen.</Description>
     <Authors>Dataport AppFrameDotNet DotNetTools</Authors>
     <Company>Dataport</Company>
     <Product>AppFrameDotNet</Product>
     <Copyright>Dataport 2020</Copyright>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

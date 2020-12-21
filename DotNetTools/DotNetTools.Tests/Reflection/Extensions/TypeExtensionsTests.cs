@@ -185,6 +185,96 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Tests.Reflection.Extensions
             fail.Should().Throw<ArgumentException>();
         }
 
+        [Theory]
+        [InlineData(typeof(byte), "byte")]
+        [InlineData(typeof(sbyte), "sbyte")]
+        [InlineData(typeof(short), "short")]
+        [InlineData(typeof(ushort), "ushort")]
+        [InlineData(typeof(int), "int")]
+        [InlineData(typeof(uint), "uint")]
+        [InlineData(typeof(long), "long")]
+        [InlineData(typeof(ulong), "ulong")]
+        [InlineData(typeof(float), "float")]
+        [InlineData(typeof(double), "double")]
+        [InlineData(typeof(decimal), "decimal")]
+        [InlineData(typeof(object), "object")]
+        [InlineData(typeof(bool), "bool")]
+        [InlineData(typeof(char), "char")]
+        [InlineData(typeof(string), "string")]
+        [InlineData(typeof(void), "void")]
+        [InlineData(typeof(byte), "Byte", false, true)]
+        [InlineData(typeof(sbyte), "SByte", false, true)]
+        [InlineData(typeof(short), "Int16", false, true)]
+        [InlineData(typeof(ushort), "UInt16", false, true)]
+        [InlineData(typeof(int), "Int32", false, true)]
+        [InlineData(typeof(uint), "UInt32", false, true)]
+        [InlineData(typeof(long), "Int64", false, true)]
+        [InlineData(typeof(ulong), "UInt64", false, true)]
+        [InlineData(typeof(float), "Single", false, true)]
+        [InlineData(typeof(double), "Double", false, true)]
+        [InlineData(typeof(decimal), "Decimal", false, true)]
+        [InlineData(typeof(object), "Object", false, true)]
+        [InlineData(typeof(bool), "Boolean", false, true)]
+        [InlineData(typeof(char), "Char", false, true)]
+        [InlineData(typeof(string), "String", false, true)]
+        [InlineData(typeof(void), "Void", false, true)]
+        [InlineData(typeof(Action<>), "Action<T>")]
+        [InlineData(typeof(Action<string, int>), "Action<string, int>")]
+        [InlineData(typeof(Action<Action<bool>>), "Action<Action<bool>>")]
+        [InlineData(typeof(Action<Action<bool>>), "Action<Action<Boolean>>", true, true)]
+        [InlineData(typeof(IDictionary<string, object>), "IDictionary<string, object>")]
+        [InlineData(typeof(IDictionary<string, object>), "IDictionary<String, Object>", true, true)]
+        [InlineData(typeof(IEnumerable<>), "IEnumerable<out T>", true)]
+        [InlineData(typeof(IEnumerable<>), "IEnumerable<T>")]
+        // Parent class (TypeExtensionsTests) is always included as prefix in codename
+        [InlineData(typeof(MemberClass), "TypeExtensionsTests.MemberClass")]
+        [InlineData(typeof(GenericMasterClass<>.GenericNestedClass<>), "TypeExtensionsTests.GenericMasterClass<TMaster>.GenericNestedClass<TNested>")]
+        [InlineData(typeof(GenericMasterClass<object>.GenericNestedClass<string>), "TypeExtensionsTests.GenericMasterClass<object>.GenericNestedClass<string>")]
+        [InlineData(typeof(GenericMasterClass<object>.GenericNestedClass<string>), "TypeExtensionsTests.GenericMasterClass<Object>.GenericNestedClass<String>", false, true)]
+        [InlineData(typeof(GenericConstraintsClass<>), "TypeExtensionsTests.GenericConstraintsClass<{T : class, IDisposable, new()}>", true)]
+        [InlineData(typeof(GenericConstraintsClass<>), "TypeExtensionsTests.GenericConstraintsClass<T>")]
+        [InlineData(typeof(GenericConstraintClassWithGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithGeneric<{T : IEnumerable<String>}>", true, true)]
+        [InlineData(typeof(GenericConstraintClassWithGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithGeneric<{T : IEnumerable<string>}>", true)]
+        [InlineData(typeof(GenericConstraintClassWithGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithGeneric<T>")]
+        [InlineData(typeof(GenericConstraintClassWithNestedGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithNestedGeneric<{T : IEnumerable<ICollection<String>>}>", true, true)]
+        [InlineData(typeof(GenericConstraintClassWithNestedGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithNestedGeneric<{T : IEnumerable<ICollection<string>>}>", true)]
+        [InlineData(typeof(GenericConstraintClassWithNestedGeneric<>), "TypeExtensionsTests.GenericConstraintClassWithNestedGeneric<T>")]
+        [InlineData(typeof(GenericArrayClass<>), "TypeExtensionsTests.GenericArrayClass<T>")]
+        [InlineData(typeof(GenericArrayClass<>), "TypeExtensionsTests.GenericArrayClass<{T : IEnumerable<int?[,]>}>", true)]
+        [InlineData(typeof(GenericArrayClass<>), "TypeExtensionsTests.GenericArrayClass<{T : IEnumerable<Nullable<Int32>[,]>}>", true, true)]
+        // Nullable value types
+        [InlineData(typeof(int?), "int?")]
+        [InlineData(typeof(bool?), "bool?")]
+        [InlineData(typeof(short?), "Nullable<Int16>", false, true)]
+        [InlineData(typeof(char?), "Nullable<Char>", false, true)]
+        // Arrays
+        [InlineData(typeof(object[]), "object[]")]
+        [InlineData(typeof(object[,]), "object[,]")]
+        [InlineData(typeof(object[,,]), "object[,,]")]
+        [InlineData(typeof(float[]), "float[]")]
+        [InlineData(typeof(object[]), "Object[]", false, true)]
+        [InlineData(typeof(bool[,]), "Boolean[,]", false, true)]
+        [InlineData(typeof(Action<string, int>[]), "Action<string, int>[]")]
+        [InlineData(typeof(Action<string[]>), "Action<string[]>")]
+        [InlineData(typeof(Action<Action<bool>>[]), "Action<Action<Boolean>>[]", true, true)]
+        // Array + Nullable value types
+        [InlineData(typeof(int?[]), "int?[]")]
+        [InlineData(typeof(double?[,]), "double?[,]")]
+        [InlineData(typeof(Action<int?[]>), "Action<int?[]>")]
+        [InlineData(typeof(Action<int?[,]>), "Action<int?[,]>")]
+        [InlineData(typeof(bool?[]), "Nullable<Boolean>[]", false, true)]
+        [InlineData(typeof(short?[,]), "Nullable<Int16>[,]", false, true)]
+        [InlineData(typeof(Action<long?[]>), "Action<Nullable<Int64>[]>", false, true)]
+        [InlineData(typeof(Action<long?[,]>), "Action<Nullable<Int64>[,]>", false, true)]
+        public void GetCodeName_Cases_Complies(Type type, string expectedCodeName, bool includeConstraints = false, bool useBuildInNames = false)
+        {
+            // act
+            var result = type.GetCodeName(includeConstraints, useBuildInNames);
+
+            // assert
+            result.Should().Be(expectedCodeName);
+        }
+
         private class MemberClass
         {
             public static string PublicStaticProperty { get; set; }
@@ -216,6 +306,44 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Tests.Reflection.Extensions
             public static string PublicFooProp { get; } = "PublicFooProp1";
             public static string PublicFooField = "PublicFooField1";
             public const string PublicFooConst = "PublicFooConst1";
+        }
+
+        // ReSharper disable once ClassNeverInstantiated.Local
+        private class GenericMasterClass<TMaster>
+        {
+            // ReSharper disable once UnusedMember.Local
+            public TMaster Master { get; set; }
+
+            public class GenericNestedClass<TNested>
+            {
+                // ReSharper disable once UnusedMember.Local
+                public GenericMasterClass<TMaster> Owner { get; set; }
+
+                // ReSharper disable once UnusedMember.Local
+                public TNested Value { get; set; }
+            }
+        }
+
+        private class GenericConstraintsClass<T>
+            where T : class, IDisposable, new()
+        {
+            // ReSharper disable once UnusedMember.Local
+            public IDisposable Create() => new T();
+        }
+
+        // ReSharper disable once UnusedTypeParameter
+        private class GenericConstraintClassWithGeneric<T> where T : IEnumerable<string>
+        {
+        }
+
+        // ReSharper disable once UnusedTypeParameter
+        private class GenericConstraintClassWithNestedGeneric<T> where T : IEnumerable<ICollection<string>>
+        {
+        }
+
+        // ReSharper disable once UnusedTypeParameter
+        private class GenericArrayClass<T> where T : IEnumerable<int?[,]>
+        {
         }
     }
 }

@@ -10,6 +10,26 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions
     /// </summary>
     public static class TypeExtensions
     {
+        private static readonly Dictionary<Type, TypeAlias> TypeAliases = new[]
+        {
+            new TypeAlias(typeof(byte)),
+            new TypeAlias(typeof(sbyte)),
+            new TypeAlias(typeof(short), "short"),
+            new TypeAlias(typeof(ushort), "ushort"),
+            new TypeAlias(typeof(int), "int"),
+            new TypeAlias(typeof(uint), "uint"),
+            new TypeAlias(typeof(long), "long"),
+            new TypeAlias(typeof(ulong), "ulong"),
+            new TypeAlias(typeof(float), "float"),
+            new TypeAlias(typeof(double)),
+            new TypeAlias(typeof(decimal)),
+            new TypeAlias(typeof(object)),
+            new TypeAlias(typeof(bool), "bool"),
+            new TypeAlias(typeof(char)),
+            new TypeAlias(typeof(string)),
+            new TypeAlias(typeof(void))
+        }.ToDictionary(l => l.Type);
+
         /// <summary>
         /// Gibt an, ob der Datentyp nullable ist.
         /// </summary>
@@ -165,6 +185,148 @@ namespace Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions
             }
 
             throw new ArgumentException($"There is no property or field with name '{memberName}' in Typ '{type}'");
+        }
+
+        /// <summary>
+        /// Gibt den lesbaren Namen des Typs (CodeName) zurück.
+        /// </summary>
+        /// <param name="type">Type.</param>
+        /// <param name="includeConstraints">Gibt an, ob bei der Ausgabe auch die Constraints von generischen Parametern ausgegeben werden sollen.</param>
+        /// <param name="useBuildInNames">Gibt an, dass die von .Net standardisierten Namen verwendet werden.</param>
+        /// <returns>Lesbarer Name des Typs mit generischen Argumenten/Parametern.</returns>
+        public static string GetCodeName(this Type type, bool includeConstraints = false, bool useBuildInNames = false)
+        {
+            var parentType = type.DeclaringType;
+
+            bool IsArrayType(out Type elementType)
+            {
+                elementType = type.IsArray ? type.GetElementType() : null;
+                return elementType != null;
+            }
+
+            if (IsArrayType(out var arrayElementType))
+            {
+                // "arrayElementType.GetCodeName" ==> notwendig für...
+                // - useBuildInNames = false (ggf. über Alias bestimmen)
+                // - arrayElementType.IsGeneric = true (Generische Typen müssen korrekt aufgelöst werden)
+                var arraySuffix = $"[{string.Join(",", new string[type.GetArrayRank()])}]";
+                return $"{arrayElementType.GetCodeName(includeConstraints, useBuildInNames)}{arraySuffix}";
+            }
+
+            bool IsNullableValueType(out Type underlyingType)
+            {
+                underlyingType = Nullable.GetUnderlyingType(type);
+                return underlyingType != null;
+            }
+
+            if (!useBuildInNames && IsNullableValueType(out var valueType))
+            {
+                return $"{valueType.GetCodeName(includeConstraints)}?"; // add "nullable" compiler symbol '?'
+            }
+
+            var typeName = !useBuildInNames && TypeAliases.ContainsKey(type) ? TypeAliases[type].Alias : type.Name;
+
+            var genericSuffixIndex = typeName.IndexOf('`');
+
+            if (type.IsGenericType)
+            {
+                var genericTypeArguments = type.GetGenericTypeArgumentOrParameter();
+                var genericArgumentCounter = genericTypeArguments.Length;
+
+                if (type.IsNested)
+                {
+                    // Ist der ParentType (DeclaringType) ein GenericType?
+                    if (parentType?.IsGenericType ?? false)
+                    {
+                        // Wie hoch ist der Counter für generische Argumente bei "diesem" Type?
+                        // Beispiel:
+                        //      MasterClass<TParameter, TValue>.ChildClass<TType>
+                        //      typeName = "ChildClass`1" == also ==> Counter = 1
+                        if (genericSuffixIndex >= 0)
+                        {
+                            var genericArgumentCounterIndex = genericSuffixIndex + 1;
+                            genericArgumentCounter = int.Parse(typeName.Substring(genericArgumentCounterIndex, typeName.Length - genericArgumentCounterIndex));
+                        }
+                        else genericArgumentCounter = 0;
+
+                        // Wenn ein Missverhältnis bei den Argumenten besteht,
+                        // dann müssen die Generischen Argumente manuell ermittelt werden.
+                        // Beispiel:
+                        //      MasterClass<TParameter, TValue>.ChildClass<TType>
+                        //      Counter = 1 (siehe oben)
+                        //      GenericTypeArguments = 3 ('MasterClass' wird mitgezählt)
+                        if (genericArgumentCounter != genericTypeArguments.Length)
+                        {
+                            var skipCounter = genericTypeArguments.Length - genericArgumentCounter;
+                            parentType = parentType.MakeGenericType(genericTypeArguments.Take(skipCounter).ToArray());
+                            genericTypeArguments = genericTypeArguments.Skip(skipCounter).ToArray();
+                        }
+                    }
+                }
+
+                // Wenn es für "diesen" Type generische Argumente gibt,
+                // dann einen lesbaren Namen mit diesen Argumenten bilden.
+                if (genericArgumentCounter > 0)
+                {
+                    if (genericSuffixIndex >= 0) typeName = typeName.Substring(0, genericSuffixIndex);
+                    var genericTypeArgumentCodeNames = genericTypeArguments.Select(t => t.GetCodeName(includeConstraints, useBuildInNames));
+                    typeName = $"{typeName}<{string.Join(", ", genericTypeArgumentCodeNames)}>";
+                }
+            }
+
+            if (type.IsGenericParameter)
+            {
+                if (!includeConstraints) return typeName;
+
+                var constraintCodeNames = type.GetGenericParameterConstraintCodeNames(useBuildInNames);
+                if (constraintCodeNames.Length > 0)
+                    typeName = $"{{{typeName} : {string.Join(", ", constraintCodeNames)}}}";
+
+                if (type.GenericParameterAttributes.HasFlag(GenericParameterAttributes.Covariant))
+                    typeName = $"out {typeName}";
+                if (type.GenericParameterAttributes.HasFlag(GenericParameterAttributes.Contravariant))
+                    typeName = $"in {typeName}";
+            }
+            else if (parentType != null) // ParentType nur anfügen, wenn es "kein" GenericParameter ist
+                typeName = $"{parentType.GetCodeName(includeConstraints, useBuildInNames)}.{typeName}";
+
+            return typeName;
+        }
+
+        private static string[] GetGenericParameterConstraintCodeNames(this Type genericParameter, bool useBuildInNames)
+        {
+            var constraints = genericParameter.GetGenericParameterConstraints();
+            var constraintCodeNames = constraints.Select(c => c.GetCodeName(true, useBuildInNames));
+            if (genericParameter.GenericParameterAttributes.HasFlag(GenericParameterAttributes.ReferenceTypeConstraint))
+                constraintCodeNames = constraintCodeNames.Prepend("class");
+            if (genericParameter.GenericParameterAttributes.HasFlag(GenericParameterAttributes.DefaultConstructorConstraint))
+                constraintCodeNames = constraintCodeNames.Append("new()");
+
+            return constraintCodeNames.ToArray();
+        }
+
+        private static Type[] GetGenericTypeArgumentOrParameter(this Type type)
+        {
+            // IsConstructedGenericType ==> Action<string, int> (Beispiel)
+            // IsNotConstructedGenericType ==> Action<,> (Beispiel)
+            var genericTypeArguments = type.IsConstructedGenericType
+                ? type.GenericTypeArguments     // definierte Typen bei einem konstruierten Generic
+                : type.GetGenericArguments();   // Parameter für einen nicht konstruierten Generic
+
+            return genericTypeArguments;
+        }
+
+        private class TypeAlias
+        {
+            public Type Type { get; }
+
+            public string Alias { get; }
+
+            public TypeAlias(Type type, string alias = null)
+            {
+                Type = type;
+                Alias = string.IsNullOrEmpty(alias) ? type.Name.ToLower() : alias;
+            }
         }
     }
 }
