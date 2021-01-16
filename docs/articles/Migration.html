@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Migrationsanleitung von Version 2.x zu Version 3 | AppFrameDotNet.DotNetTools </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Migrationsanleitung von Version 2.x zu Version 3 | AppFrameDotNet.DotNetTools ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/Content.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="Content.html" title="Content" class="">Content</a>
+                    </li>
+                    <li class="">
+                      <a href="Changes.html" title="Changes" class="">Changes</a>
+                    </li>
+                    <li class="active">
+                      <a href="Migration.html" title="Migration" class="active">Migration</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="migrationsanleitung-von-version-2x-zu-version-3">Migrationsanleitung von Version 2.x zu Version 3</h1>
+
+<h2 id="gelöschte-klassen">Gelöschte Klassen</h2>
+<p>Beinhaltende Methoden siehe Kapitel Gelöschte Methoden und Changing Namespaces.</p>
+<table>
+<thead>
+<tr>
+<th>Namespace</th>
+<th>Klassenname</th>
+<th>Grund</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collections</td>
+<td>ListExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Expression</td>
+<td>ExpressionExtensions</td>
+<td>Falscher Namespace. Der Expression-Namespace wurde in Collections-Namespace überführt.</td>
+</tr>
+<tr>
+<td>Expression</td>
+<td>PropertySelectorTools</td>
+<td>Der Expression-Namespace wurde in Collections-Namespace überführt. Die Funktionalität wurde mit andern Methoden rund um Expressions zusammengelegt.</td>
+</tr>
+<tr>
+<td>Linq</td>
+<td>FilterExtensions</td>
+<td>Der Linq-Namespace wurde in Collections-Namespace überführt.</td>
+</tr>
+<tr>
+<td>Linq</td>
+<td>PagingExtensions</td>
+<td>Der Linq-Namespace wurde in Collections-Namespace überführt.</td>
+</tr>
+<tr>
+<td>Linq</td>
+<td>WhereClauseExpressions</td>
+<td>Der Linq-Namespace wurde in Collections-Namespace überführt. File-Class-Missmatch.</td>
+</tr>
+<tr>
+<td>Reflection</td>
+<td>EmbeddedResourcesTools</td>
+<td>Beinhaltende Methoden wurden Extension-Methoden</td>
+</tr>
+<tr>
+<td>Reflection</td>
+<td>ObjectComparsionExtensions</td>
+<td>Vergleichsmethoden verschoben in Namespace Comparison, Typo in Klassenname</td>
+</tr>
+<tr>
+<td>Reflection</td>
+<td>ObjectHelper</td>
+<td>Methoden drehten sich um Expressions, daher in Collections/ExpressionHelper aufgegangen.</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>DateExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>EnumExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>IntegerExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>ObjectExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>StreamExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>StringExtensions</td>
+<td>Falscher Namespace</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gelöschte-methoden">Gelöschte Methoden</h2>
+<table>
+<thead>
+<tr>
+<th>Methode</th>
+<th>Grund</th>
+<th>Migration</th>
+<th>Zusatzinfos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DateTime.Truncate(TimeSpan)</td>
+<td>Hohe Risiko zu missbräuchlicher Verwendung.</td>
+<td>DateTime.Truncate(DateTimePart)</td>
+<td></td>
+</tr>
+<tr>
+<td>DateExtensions.AsNullable(DateTime)</td>
+<td>Nicht-Extensionmethode in Extension-Klasse. Zu spezifisch auf DateTime.</td>
+<td>DateTime.AsNullable</td>
+<td>Neue Methode für alle Structs</td>
+</tr>
+<tr>
+<td>EmbeddedResourcesTools.GetEmbeddedTextFile()</td>
+<td>Methode wurde Extensionmethode, hatte zudem diverse Probleme, Name unglücklich gewählt</td>
+<td>Assembly.LoadEmbeddedResource</td>
+<td></td>
+</tr>
+<tr>
+<td>EnumExtensions.GetEnumValues<t></t></td>
+<td>Klasse wurde aufgelöst, Multiple &quot;Enum&quot; in Name</td>
+<td>EnumHelper<t>.GetValues</t></td>
+<td></td>
+</tr>
+<tr>
+<td>instance.AsArray()</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>instance.AsArray(true)</td>
+<td></td>
+</tr>
+<tr>
+<td>instance.AsArrayOf()</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>instance.AsArray(true)</td>
+<td></td>
+</tr>
+<tr>
+<td>instance.CheckIsNotNull()</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>Verify.That(context, &quot;context&quot;).IsNotNull</td>
+<td></td>
+</tr>
+<tr>
+<td>instance.NullSafeEquals()</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>Verify.That(context, &quot;context&quot;).IsEqualTo</td>
+<td></td>
+</tr>
+<tr>
+<td>IEnmerable<string>.StringConcat</string></td>
+<td>Name irreführend, Klasse wurde aufgelöst</td>
+<td>IEnumerable<string>.Join</string></td>
+<td></td>
+</tr>
+<tr>
+<td>IEnmerable<string>.StringConcatNotEmpty</string></td>
+<td>Name irreführend, Klasse wurde aufgelöst</td>
+<td>IEnumerable<string>.JoinNotEmpty</string></td>
+<td></td>
+</tr>
+<tr>
+<td>IQueryable<t>.ApplyOptionalEqualityFilter</t></td>
+<td>Klasse wurde aufgelöst. Name zu sperrig. Zu spezifisch auf IQueryable<t></t></td>
+<td>IQueryable<t>.WhereEqualsOptional</t></td>
+<td>Neue Methode verarbeitet IEnumerable<t></t></td>
+</tr>
+<tr>
+<td>IQueryable<t>.ApplyOptionalWhereLikeFilter</t></td>
+<td>Klasse wurde aufgelöst. Name zu sperrig. Zu spezifisch auf IQueryable<t></t></td>
+<td>IQueryable<t>.WhereLikeOptional</t></td>
+<td>Neue Methode verarbeitet IEnumerable<t></t></td>
+</tr>
+<tr>
+<td>IQueryable<t>.ApplyOptionalWhereFilter</t></td>
+<td>Methode war absolut nicht tragbar für ein zentrales Paket.</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>ObjectHelper.PropertyName<t></t></td>
+<td>Klasse wurde aufgelöst, Name schlecht gewählt</td>
+<td>ExpressionHelper.ExtractMemberName<t></t></td>
+<td>Neues class-Constrain für TInstance</td>
+</tr>
+<tr>
+<td>PropertySelectiorTools.SelectPropertyByPath</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>ExpressionHelper.SelectPropertyByPath</td>
+<td></td>
+</tr>
+<tr>
+<td>PropertySelectiorTools.SelectPropertyByPathX</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>ExpressionHelper.SelectPropertyByPathX</td>
+<td>Unbenutzter Typparameter TOut entfernt.</td>
+</tr>
+<tr>
+<td>string.AsCleanDisplayText</td>
+<td>Klasse wurde aufgelöst.</td>
+<td>string.CleanJson</td>
+<td></td>
+</tr>
+<tr>
+<td>string.NoReturnOrLineFeeds</td>
+<td>Methode führte in vielen UseCases zu Problemen</td>
+<td>string.StripLineFeeds</td>
+<td></td>
+</tr>
+<tr>
+<td>StringExtensions.EmptyAsNull</td>
+<td>Nicht-Extensionmethod in Extensionklasse</td>
+<td>string.EmptyAsNull</td>
+<td></td>
+</tr>
+<tr>
+<td>WhereClauseExpressions.Like</td>
+<td>Klasse wurde aufgelöst. Nicht-Extensionmethode in Extension-Klasse.</td>
+<td>ExpressionHelper.CreateLikeExpression</td>
+<td>null als Value ist zulässig, neue Exception bei Wildcard irgendwo in der Mitte</td>
+</tr>
+</tbody>
+</table>
+<h2 id="changing-namespaces">Changing Namespaces</h2>
+<table>
+<thead>
+<tr>
+<th>Methode</th>
+<th>Alter Namespace</th>
+<th>Neuer Namespace</th>
+<th>Zusatzinfos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DateTime.BeginOfDay</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime.EndOfDay</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime.FirstDayOfMonth</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime.FirstDayOfNextMonth</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime.LastDayOfMonth</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime.SetDay</td>
+<td>Root</td>
+<td>Time/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>Expression.ChangeInputType</td>
+<td>Expressions</td>
+<td>Collection/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>IEnumerable.WhereNotNull</td>
+<td>Linq</td>
+<td>Collection/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>IgnoreInPropertyComparisonAttribute</td>
+<td>Reflection</td>
+<td>Comparison/Model</td>
+<td>Typo in Attributname gefixt.</td>
+</tr>
+<tr>
+<td>instance.IsEqualOnPropertyLevel</td>
+<td>Reflection</td>
+<td>Comparison/Extensions</td>
+<td>Neues class-Constraint für die Instanzen</td>
+</tr>
+<tr>
+<td>instance.MergeWith</td>
+<td>Reflection</td>
+<td>Reflection/Extensions</td>
+<td>Neues class-Constraint für die Instanzen</td>
+</tr>
+<tr>
+<td>int.AsNullable</td>
+<td>Root</td>
+<td>Numeric/Extensions</td>
+<td>Neue Methode verarbeitet alle Structs</td>
+</tr>
+<tr>
+<td>IOrderedEnumerable<t>.Page</t></td>
+<td>Linq</td>
+<td>Collection/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>IOrderedQueryable<t>.Page</t></td>
+<td>Linq</td>
+<td>Collection/Extensions</td>
+<td></td>
+</tr>
+<tr>
+<td>IQueryable<t>.WhereLike</t></td>
+<td>Linq</td>
+<td>Collection/Extensions</td>
+<td>Neue Methode verarbeite IEnumerable<t>, null als Value ist zulässig, neue Exception bei Wildcard irgendwo in der Mitte.</t></td>
+</tr>
+<tr>
+<td>List<t>.AddOrReplace</t></td>
+<td>Collections</td>
+<td>Collections/Extensions</td>
+<td>Die neue Methode verarbeite ICollection<t></t></td>
+</tr>
+<tr>
+<td>MemberComparisonResult</td>
+<td>Reflection</td>
+<td>Comparison/Model</td>
+<td>Setter entfernt, Objekt immutable</td>
+</tr>
+<tr>
+<td>PagedResult</td>
+<td>Linq</td>
+<td>Collections/Model</td>
+<td>Setter entfernt, public Konstruktor hinzugefügt.</td>
+</tr>
+<tr>
+<td>Stream.ReadAllBytes</td>
+<td>Root</td>
+<td>IO/Extensions</td>
+<td>Besseres Handling und diverse Bugfixes in der Methode</td>
+</tr>
+<tr>
+<td>string.Truncate</td>
+<td>Root</td>
+<td>Text/Extensions</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fix-typos">Fix Typos</h2>
+<table>
+<thead>
+<tr>
+<th>Namespace</th>
+<th>Typ</th>
+<th>Alter Name</th>
+<th>Neuer Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparison.Model</td>
+<td>Klasse</td>
+<td>IgnoreInPropertyComparsionAttribute</td>
+<td>IgnoreInPropertyComparisonAttribute</td>
+</tr>
+<tr>
+<td>Numeric.Extensions</td>
+<td>Klasse</td>
+<td>Formating</td>
+<td>Formatting</td>
+</tr>
+<tr>
+<td>Reflection.Validation</td>
+<td>Member</td>
+<td>ValidationResults.Informations</td>
+<td>ValidationResults.Information</td>
+</tr>
+</tbody>
+</table>
+<h2 id="weiteres">Weiteres</h2>
+<ul>
+<li>Verify.That(...).IsNotNullOrEmpty wirft im NULL-Fall nun eine ArgumentNullException statt eine ArgumentException.</li>
+<li>ExpressionHelper.SelectPropertyByName(X) hat nun ein class-Constraint</li>
+<li>Dictionary.AddIfMissing funktioniert nun auch für IDictionary</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
