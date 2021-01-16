@@ -1,0 +1,853 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/git/AppFrame-DotNetTools/_Dokumentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.html",
+          "hash": "DYud2fJfiaWWDKJU8GxY1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.html",
+          "hash": "tKQFljdLQa8mHdVYAMpkLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Checking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Checking.html",
+          "hash": "70UNHtOtmzAnzzniKsGG6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Execution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Execution.html",
+          "hash": "U8aVPT8cmwKxx3FOswXETw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.ExpressionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.ExpressionExtensions.html",
+          "hash": "hq6Fil1RqpwO1X48L2Kgdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.html",
+          "hash": "Ad+j8GOUz8+ZzqbV/k6mkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Indexing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Indexing.html",
+          "hash": "CIMiGfLHjjO522ug79ikug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Transformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Transformation.html",
+          "hash": "2O1aUnQaTFekXDczvQFcjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.html",
+          "hash": "2YDPhSxw/wBqEFeog+ijyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.PagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.PagedResult-1.html",
+          "hash": "eqEvQKbNZMBNsgRQLzTtGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.html",
+          "hash": "djq1ejFgY3DEMWcrqoWGMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.NonRepeatableEnumerable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.NonRepeatableEnumerable-1.html",
+          "hash": "NygWOVEiu6heNMw+bFqQNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.html",
+          "hash": "CKn9eZIDHn6pYwQo6f/1QA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.ComparisonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.ComparisonExtensions.html",
+          "hash": "D5q+LXyOJveSpE/wNGdspA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.DictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.DictionaryExtensions.html",
+          "hash": "6OF8SeSlM7BXDVgdabuJGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.html",
+          "hash": "VElG7UWpBLaL2qv4MY6iYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.BoundaryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.BoundaryType.html",
+          "hash": "PU7XgXkds/gIFzq+VB/X3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.IgnoreInPropertyComparisonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.IgnoreInPropertyComparisonAttribute.html",
+          "hash": "yW+L9rNSYjNymc1cOSUkyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.MemberComparisonResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.MemberComparisonResult.html",
+          "hash": "8+FJjVCWqtExL/V0Z3TG4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.html",
+          "hash": "pFEEOpAtfQrcOzT7quO0+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.HttpStatusCodeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.HttpStatusCodeExtensions.html",
+          "hash": "sSUr2ut4ryiaMT1Hku4xXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StreamExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StreamExtensions.html",
+          "hash": "SIqVMtIautWdu29YATgT2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StringExtensions.html",
+          "hash": "KM3ASE0amSHv195WOMxb4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.html",
+          "hash": "oR8MB8rMWdoGigZWXtC4Gw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Formatting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Formatting.html",
+          "hash": "9iHXhC6XT8dbzr6oqxkffw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Percentage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Percentage.html",
+          "hash": "eF4VPxMQlG/VuwWWB3vNLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Structure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Structure.html",
+          "hash": "rmQBrCd0TIcQCwNneRGqjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.html",
+          "hash": "T5pSc+kOFjtbZJi6h18RIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.PercentageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.PercentageType.html",
+          "hash": "xNKPK2vQ3CVvDOyjkHTqgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.html",
+          "hash": "Ztq2lzhk16Wzfa4stVGpiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper-1.html",
+          "hash": "mjJbSQj2tQJWZla1SxSPWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.AssemblyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.AssemblyExtensions.html",
+          "hash": "l+WDh3nUi3y58Q1z7yOJyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.html",
+          "hash": "Q4c8o7lU7roqL07KzsEIyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.InstanceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.InstanceExtensions.html",
+          "hash": "3MJAMnNOegvBkCNZDWSRvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.StringExtensions.html",
+          "hash": "AWarKxfzE23EfmYsJEHIXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TransformationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TransformationExtensions.html",
+          "hash": "0Wp9OPV/kUPoLS5rdLIj4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeExtensions.html",
+          "hash": "rBNGywxVVdo+68C+4KVDmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeManipulationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeManipulationExtensions.html",
+          "hash": "YpUA2VygBXHAqJfEbozptg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.html",
+          "hash": "MSnt7JDwJe9N7707SZ8q8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.html",
+          "hash": "ebjvlM5x/CDmDBP5RxQkig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.BooleanExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.BooleanExtensions.html",
+          "hash": "SR7sO1n3uD/5l5BFhYobLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.html",
+          "hash": "i4hGtO4l/MYvFf+Tvfhv+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.html",
+          "hash": "VqPaCecuD1qX5TTC1llOqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.DateTimeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.DateTimeExtensions.html",
+          "hash": "YF03rtwtnaKEAYMAiUt+5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.html",
+          "hash": "1RsE6AiZGS76xVvyF+VYmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.DateTimePart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.DateTimePart.html",
+          "hash": "O5AzyReaZN0/6vscIGva/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.html",
+          "hash": "Lbg7T5o/IzS+sXU8voA4iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.html",
+          "hash": "3byiOnh/HO0bAPc4Ig7b5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.html",
+          "hash": "3JXUuYgXF0ghnd0ZJbp5Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition-1.html",
+          "hash": "y1v5cbDhfdIreUNQ+5PdKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Severity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Severity.html",
+          "hash": "7ZmRelrtoFMnKWo2bPGwdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.html",
+          "hash": "SQX2O53D9+cAU80STvc5Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.ValidationResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.ValidationResults.html",
+          "hash": "R218Pxq+EPdKmtl+V1FYZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Verify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Verify.html",
+          "hash": "4QLEFpLZvzFCVLFxFvN8fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.html",
+          "hash": "Ani4OotzfZpz3Ab3+lhLYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "pou6UjTV/WZypbBYUnusBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "4B0dZ8+6/y8ECl1OgCmr8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Changes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Changes.html",
+          "hash": "fOyEmuS1TP+ZEje3rssnnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Content.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Content.html",
+          "hash": "hHtVlgXnLBvEf7v1SsIUPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Einleitung.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Einleitung.html",
+          "hash": "eM1xsDIe/5PPz7LkVdb+vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Migration.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Migration.html",
+          "hash": "4pNCzxiybSf3/tIrEFRuVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "/gL2C3W6ky0sFjfR1pttgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/appFrame.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/appFrame.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/combined_logos.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/combined_logos.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "hZ9z0qfa6ire2IFS98jfDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "z/dmbI6sonE9MeLrVGVkBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 55,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
