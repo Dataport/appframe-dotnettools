@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class StringExtensions
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,11 +314,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">StringExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.html">Dataport.AppFrameDotNet.DotNetTools.Text.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class StringExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -510,7 +534,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_FromBase64_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.FromBase64*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_FromBase64_System_String_Encoding_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.FromBase64(System.String,Encoding)">FromBase64(String, Encoding)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_FromBase64_System_String_System_Text_Encoding_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.FromBase64(System.String,System.Text.Encoding)">FromBase64(String, Encoding)</h4>
   <div class="markdown level1 summary"><p>Konvertiert einen Base64-String in einen normalen String.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -535,7 +559,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>Das Encoding was dafür verwendet werden soll</p>
 </td>
@@ -816,7 +840,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_ToBase64_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.ToBase64*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_ToBase64_System_String_Encoding_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.ToBase64(System.String,Encoding)">ToBase64(String, Encoding)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_ToBase64_System_String_System_Text_Encoding_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.ToBase64(System.String,System.Text.Encoding)">ToBase64(String, Encoding)</h4>
   <div class="markdown level1 summary"><p>Konvertiert einen String in einen Base64-String.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -841,7 +865,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Encoding</span></td>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>Das Encoding was dafür verwendet werden soll</p>
 </td>
@@ -933,6 +957,22 @@ Verhalten: Der Member muss am Enum definiert sein.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Der String konnte nicht geparst werden oder der Member war für <code data-dev-comment-type="typeparamref" class="typeparamref">TEnum</code> nicht definiert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Text_Extensions_StringExtensions_Truncate_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.Truncate*"></a>
@@ -980,6 +1020,22 @@ Verhalten: Der Member muss am Enum definiert sein.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>Der gekürzte String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Die Länge ist kleiner als 0.</p>
 </td>
       </tr>
     </tbody>
@@ -1069,7 +1125,8 @@ Verhalten: Der Member muss am Enum definiert sein.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

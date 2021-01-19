@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EnumExtensions
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,18 +314,42 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">EnumExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.html">Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_Extensions_EnumExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class EnumExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class EnumExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Reflection_Extensions_EnumExtensions_ChangeType_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.ChangeType*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_Extensions_EnumExtensions_ChangeType__1_Enum_System_Boolean_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.ChangeType``1(Enum,System.Boolean)">ChangeType&lt;TOut&gt;(Enum, Boolean)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_Extensions_EnumExtensions_ChangeType__1_System_Enum_System_Boolean_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.ChangeType``1(System.Enum,System.Boolean)">ChangeType&lt;TOut&gt;(Enum, Boolean)</h4>
   <div class="markdown level1 summary"><p>Parst ein Enum-Value in ein Value eines anderen Typen.
 Verhalten: Der abgesicherte Modus (strict = true) stellt sicher, dass alle Wert-Index-Paare
 des Enums in <code data-dev-comment-type="typeparamref" class="typeparamref">TOut</code> existieren um Laufzeitfehler zu verhindern.
@@ -348,7 +372,7 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Enum</span></td>
+        <td><span class="xref">System.Enum</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>Der zu überführende Wert.</p>
 </td>
@@ -391,6 +415,22 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Das Parsen funktioniert nicht ODER (bei strict = true) nicht alle Ausprägungen des Enums sind im Zielenum enthalten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -401,7 +441,8 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

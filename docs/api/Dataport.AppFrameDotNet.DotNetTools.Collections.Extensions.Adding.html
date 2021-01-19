@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Adding
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,18 +314,42 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Adding</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.html">Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Adding : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Adding</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Add_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Add*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Add__1_IEnumerable___0____0___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Add``1(IEnumerable{``0},``0[])">Add&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType[])</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Add__1_System_Collections_Generic_IEnumerable___0____0___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Add``1(System.Collections.Generic.IEnumerable{``0},``0[])">Add&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType[])</h4>
   <div class="markdown level1 summary"><p>Fügt einer Enumeration verschiedene Werte hinzu.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -344,7 +368,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die Enumeration</p>
 </td>
@@ -367,7 +391,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Enumeration der verketteten Werte</p>
 </td>
       </tr>
@@ -392,13 +416,14 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddIfMissing_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddIfMissing*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddIfMissing__2_IDictionary___0___1____0_Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddIfMissing``2(IDictionary{``0,``1},``0,Func{``0,``1})">AddIfMissing&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddIfMissing__2_System_Collections_Generic_IDictionary___0___1____0_System_Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddIfMissing``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">AddIfMissing&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;)</h4>
   <div class="markdown level1 summary"><p>Fügt den Eintrag in das <code data-dev-comment-type="paramref" class="paramref">dictionary</code> hinzu, wenn der Schlüssel nicht existiert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddIfMissing&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dictionary, TKey key, Func&lt;TKey, TValue&gt; valueProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Wird mit Version 4 obsolet, verwende stattdessen TryAdd&quot;)]
+public static void AddIfMissing&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dictionary, TKey key, Func&lt;TKey, TValue&gt; valueProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -411,7 +436,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dictionary</span></td>
         <td><p>Das verwendete Wörterbuch</p>
 </td>
@@ -423,7 +448,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">valueProvider</span></td>
         <td><p>Gibt den Wert zurück</p>
 </td>
@@ -454,9 +479,9 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplace_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplace*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplace__1_ICollection___0__Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplace``1(ICollection{``0},Func{``0,System.Boolean},``0)">AddOrReplace&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplace__1_System_Collections_Generic_ICollection___0__System_Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplace``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},``0)">AddOrReplace&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
   <div class="markdown level1 summary"><p>Ersetzt einen Eintrag in einer Liste durch einen anderen wenn dieser bereits vorhanden ist.
-Ansonsten wir er einfach zugefügt. Für eine Ersetzung aller Vorkommen siehe Methode <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.html#Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_ICollection___0__Func___0_System_Boolean____0_">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</a>.</p>
+Ansonsten wir er einfach zugefügt. Für eine Ersetzung aller Vorkommen siehe Methode <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.html#Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_System_Collections_Generic_ICollection___0__System_Func___0_System_Boolean____0_">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -474,13 +499,13 @@ Ansonsten wir er einfach zugefügt. Für eine Ersetzung aller Vorkommen siehe Me
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;TType&gt;</td>
         <td><span class="parametername">context</span></td>
         <td><p>Liste</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>Regel zum selektieren des Eintrags. Muss ein einwertiges Ergebnis liefern.</p>
 </td>
@@ -509,11 +534,32 @@ Ansonsten wir er einfach zugefügt. Für eine Ersetzung aller Vorkommen siehe Me
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Einer der übergebenen Parameter ist null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>Es wurde eine Collection fester Länge (bspw. ein Array) übergeben.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_ICollection___0____0___0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(ICollection{``0},``0,``0)">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, TType, TType)</h4>
-  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <see cref="!:ICollection&lt;T>"></see> durch einen anderen wenn dieser bereits vorhanden ist.
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_System_Collections_Generic_ICollection___0____0___0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(System.Collections.Generic.ICollection{``0},``0,``0)">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, TType, TType)</h4>
+  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> durch einen anderen wenn dieser bereits vorhanden ist.
 Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -533,7 +579,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;TType&gt;</td>
         <td><span class="parametername">collection</span></td>
         <td><p>Die Collection die modifiziert wird.</p>
 </td>
@@ -568,11 +614,27 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>Wenn eine Collection fester Länge verwendet wird.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_ICollection___0__Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(ICollection{``0},Func{``0,System.Boolean},``0)">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
-  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <see cref="!:ICollection&lt;T>"></see> durch einen anderen wenn dieser bereits vorhanden ist.
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_System_Collections_Generic_ICollection___0__System_Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},``0)">AddOrReplaceAll&lt;TType&gt;(ICollection&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
+  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span> durch einen anderen wenn dieser bereits vorhanden ist.
 Ansonsten wird er einfach ans Ende hinzugefügt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -591,13 +653,13 @@ Ansonsten wird er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;TType&gt;</td>
         <td><span class="parametername">collection</span></td>
         <td><p>Die Collection die modifiziert wird.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>Prädikat anhand dessen Werte ausgewählt werden können.</p>
 </td>
@@ -626,11 +688,27 @@ Ansonsten wird er einfach ans Ende hinzugefügt.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>Wenn eine Collection fester Länge verwendet wird.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_IList___0____0___0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(IList{``0},``0,``0)">AddOrReplaceAll&lt;TType&gt;(IList&lt;TType&gt;, TType, TType)</h4>
-  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <see cref="!:IList&lt;T>"></see> positionsgerecht durch einen anderen wenn dieser bereits vorhanden ist.
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_System_Collections_Generic_IList___0____0___0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(System.Collections.Generic.IList{``0},``0,``0)">AddOrReplaceAll&lt;TType&gt;(IList&lt;TType&gt;, TType, TType)</h4>
+  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span> positionsgerecht durch einen anderen wenn dieser bereits vorhanden ist.
 Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -650,7 +728,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TType&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>Die Liste die modifiziert wird.</p>
 </td>
@@ -688,8 +766,8 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_IList___0__Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(IList{``0},Func{``0,System.Boolean},``0)">AddOrReplaceAll&lt;TType&gt;(IList&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
-  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <see cref="!:IList&lt;T>"></see> positionsgerecht durch einen anderen wenn dieser bereits vorhanden ist.
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_AddOrReplaceAll__1_System_Collections_Generic_IList___0__System_Func___0_System_Boolean____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.AddOrReplaceAll``1(System.Collections.Generic.IList{``0},System.Func{``0,System.Boolean},``0)">AddOrReplaceAll&lt;TType&gt;(IList&lt;TType&gt;, Func&lt;TType, Boolean&gt;, TType)</h4>
+  <div class="markdown level1 summary"><p>Ersetzt alle Einträge in einer <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span> positionsgerecht durch einen anderen wenn dieser bereits vorhanden ist.
 Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -708,13 +786,13 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TType&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>Die Liste die modifiziert wird.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TType, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>Prädikat anhand dessen Werte ausgewählt werden können.</p>
 </td>
@@ -746,7 +824,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Append_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Append*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Append__1_IEnumerable___0____0___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Append``1(IEnumerable{``0},``0[])">Append&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType[])</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_Append__1_System_Collections_Generic_IEnumerable___0____0___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.Append``1(System.Collections.Generic.IEnumerable{``0},``0[])">Append&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType[])</h4>
   <div class="markdown level1 summary"><p>Fügt einer Enumeration verschiedene Werte hinzu.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -765,7 +843,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die Enumeration</p>
 </td>
@@ -788,7 +866,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Enumeration der verketteten Werte</p>
 </td>
       </tr>
@@ -813,7 +891,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_GetOrAdd_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.GetOrAdd*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_GetOrAdd__2_IDictionary___0___1____0_Func___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.GetOrAdd``2(IDictionary{``0,``1},``0,Func{``1})">GetOrAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TValue&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_GetOrAdd__2_System_Collections_Generic_IDictionary___0___1____0_System_Func___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1})">GetOrAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TValue&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt den Eintrag im Wörterbuch zurück und legt diesen an, wenn er noch nicht vorhanden ist.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -832,7 +910,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dictionary</span></td>
         <td><p>Das verwendete Wörterbuch</p>
 </td>
@@ -844,7 +922,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TValue&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TValue&gt;</td>
         <td><span class="parametername">valueProvider</span></td>
         <td><p>Gibt den Wert zurück</p>
 </td>
@@ -891,7 +969,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd__2_IDictionary___0___1____0_Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd``2(IDictionary{``0,``1},``0,Func{``0,``1})">TryAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd__2_System_Collections_Generic_IDictionary___0___1____0_System_Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">TryAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TKey, TValue&gt;)</h4>
   <div class="markdown level1 summary"><p>Versucht einen Eintrag in das <code data-dev-comment-type="paramref" class="paramref">dictionary</code> hinzuzufügen, wenn der Schlüssel nicht existiert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -910,7 +988,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dictionary</span></td>
         <td><p>Das verwendete Wörterbuch</p>
 </td>
@@ -922,7 +1000,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">valueProvider</span></td>
         <td><p>Gibt den Wert zurück</p>
 </td>
@@ -969,7 +1047,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd__2_IDictionary___0___1____0_Func___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd``2(IDictionary{``0,``1},``0,Func{``1})">TryAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TValue&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Adding_TryAdd__2_System_Collections_Generic_IDictionary___0___1____0_System_Func___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.TryAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1})">TryAdd&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, Func&lt;TValue&gt;)</h4>
   <div class="markdown level1 summary"><p>Versucht einen Eintrag in das <code data-dev-comment-type="paramref" class="paramref">dictionary</code> hinzuzufügen, wenn der Schlüssel nicht existiert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -988,7 +1066,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dictionary</span></td>
         <td><p>Das verwendete Wörterbuch</p>
 </td>
@@ -1000,7 +1078,7 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TValue&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TValue&gt;</td>
         <td><span class="parametername">valueProvider</span></td>
         <td><p>Gibt den Wert zurück</p>
 </td>
@@ -1054,7 +1132,8 @@ Ansonsten wir er einfach ans Ende hinzugefügt.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExpressionHelper
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -306,7 +306,7 @@
   
   <h1 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper" class="text-break">Class ExpressionHelper
   </h1>
-  <div class="markdown level0 summary"><p>Stellt Methoden zur Verfügung um <see cref="!:Expression"></see>s zu erzeugen.</p>
+  <div class="markdown level0 summary"><p>Stellt Methoden zur Verfügung um <span class="xref">System.Linq.Expressions.Expression</span>s zu erzeugen.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -314,18 +314,42 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ExpressionHelper</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Collections.html">Dataport.AppFrameDotNet.DotNetTools.Collections</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ExpressionHelper : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ExpressionHelper</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ChangeInputType_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ChangeInputType*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ChangeInputType__3_Expression_Func___0___2___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ChangeInputType``3(Expression{Func{``0,``2}})">ChangeInputType&lt;TBefore, TAfter, TResult&gt;(Expression&lt;Func&lt;TBefore, TResult&gt;&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ChangeInputType__3_System_Linq_Expressions_Expression_System_Func___0___2___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ChangeInputType``3(System.Linq.Expressions.Expression{System.Func{``0,``2}})">ChangeInputType&lt;TBefore, TAfter, TResult&gt;(Expression&lt;Func&lt;TBefore, TResult&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Konkretisiert den Typen des Parameters der Expression.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -345,7 +369,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TBefore, TResult&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TBefore, TResult&gt;&gt;</td>
         <td><span class="parametername">context</span></td>
         <td><p>Expression, deren Parametertyp konkretisiert werden soll.</p>
 </td>
@@ -362,7 +386,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TAfter, TResult&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TAfter, TResult&gt;&gt;</td>
         <td><p>Expression, die identisch zur ursprünglichen Expression ist, aber einen konkreteren Parametertypen definiert.</p>
 </td>
       </tr>
@@ -394,13 +418,13 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ChangeInputType__3_Expression_Func___0___2____remarks">Remarks</h5>
+  <h5 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ChangeInputType__3_System_Linq_Expressions_Expression_System_Func___0___2____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Zur Verwendung von allgemein definierten Expressions für konkretere Typen, da die Kovarianz nicht automatisch aufgelöst werden kann.</p>
 </div>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateEqualExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateEqualExpression*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateEqualExpression__2_Expression_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateEqualExpression``2(Expression{Func{``0,``1}},``1)">CreateEqualExpression&lt;TInstance, TElement&gt;(Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateEqualExpression__2_System_Linq_Expressions_Expression_System_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateEqualExpression``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},``1)">CreateEqualExpression&lt;TInstance, TElement&gt;(Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
   <div class="markdown level1 summary"><p>Erzeugt eine Expression für einen Gleichheitsausdruck.
 Verhalten: Gleichheit funktioniert mit implementierten Operator oder Referenzgleichheit, nicht mit IComparable.</p>
 </div>
@@ -420,7 +444,7 @@ Verhalten: Gleichheit funktioniert mit implementierten Operator oder Referenzgle
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TElement&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TElement&gt;&gt;</td>
         <td><span class="parametername">target</span></td>
         <td><p>Eine Expression, welche einen Wert <code data-dev-comment-type="typeparamref" class="typeparamref">TElement</code> aus der Instanz erzeugt.</p>
 </td>
@@ -443,7 +467,7 @@ Verhalten: Gleichheit funktioniert mit implementierten Operator oder Referenzgle
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, <span class="xref">System.Boolean</span>&gt;&gt;</td>
         <td><p>Die Gleichheits-Expression.</p>
 </td>
       </tr>
@@ -473,7 +497,7 @@ Verhalten: Gleichheit funktioniert mit implementierten Operator oder Referenzgle
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateLikeExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateLikeExpression*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateLikeExpression__1_Expression_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateLikeExpression``1(Expression{Func{``0,System.String}},System.String,System.Char)">CreateLikeExpression&lt;TElement&gt;(Expression&lt;Func&lt;TElement, String&gt;&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_CreateLikeExpression__1_System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.CreateLikeExpression``1(System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String,System.Char)">CreateLikeExpression&lt;TElement&gt;(Expression&lt;Func&lt;TElement, String&gt;&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Erzeugt eine Expression für String-Like-Suchanfragen.
 Verhalten: Wildcards dürfen nur am Anfang und Ende des Filters stehen.
 Die Elemente der später verwendeten Collection dürfen nicht <span class="xref">null</span> sein.</p>
@@ -494,7 +518,7 @@ Die Elemente der später verwendeten Collection dürfen nicht <span class="xref"
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TElement, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TElement, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -523,7 +547,7 @@ Die Elemente der später verwendeten Collection dürfen nicht <span class="xref"
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TElement, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TElement, <span class="xref">System.Boolean</span>&gt;&gt;</td>
         <td><p>Die Suchexpression.</p>
 </td>
       </tr>
@@ -548,7 +572,7 @@ Die Elemente der später verwendeten Collection dürfen nicht <span class="xref"
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute__2_Expression_Func___0_System_Object___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute``2(Expression{Func{``0,System.Object}})">ExtractMemberAttribute&lt;TInstance, TAttribute&gt;(Expression&lt;Func&lt;TInstance, Object&gt;&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute__2_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute``2(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">ExtractMemberAttribute&lt;TInstance, TAttribute&gt;(Expression&lt;Func&lt;TInstance, Object&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt das Attribut eines Members zurück, welcher in der Anweisung vorkommt.
 Verhalten: Funktioniert auch für Cast-Ausdrücke und Vergleichsausdrücke.
 Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
@@ -570,7 +594,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, <span class="xref">System.Object</span>&gt;&gt;</td>
         <td><span class="parametername">expression</span></td>
         <td><p>Anweisungsvorschrift, wie das Property zu laden ist.</p>
 </td>
@@ -617,7 +641,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute__3_Expression_Func___0___1___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute``3(Expression{Func{``0,``1}})">ExtractMemberAttribute&lt;TInstance, TValue, TAttribute&gt;(Expression&lt;Func&lt;TInstance, TValue&gt;&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberAttribute__3_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberAttribute``3(System.Linq.Expressions.Expression{System.Func{``0,``1}})">ExtractMemberAttribute&lt;TInstance, TValue, TAttribute&gt;(Expression&lt;Func&lt;TInstance, TValue&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt das Attribut eines Members zurück, welcher in der Anweisung vorkommt.
 Verhalten: Funktioniert auch für Cast-Ausdrücke und Vergleichsausdrücke.
 Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
@@ -639,7 +663,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TValue&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TValue&gt;&gt;</td>
         <td><span class="parametername">expression</span></td>
         <td><p>Anweisungsvorschrift, wie das Property zu laden ist.</p>
 </td>
@@ -691,7 +715,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird das Erste genommen.</p>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName__1_Expression_Func___0_System_Object___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName``1(Expression{Func{``0,System.Object}})">ExtractMemberName&lt;TInstance&gt;(Expression&lt;Func&lt;TInstance, Object&gt;&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">ExtractMemberName&lt;TInstance&gt;(Expression&lt;Func&lt;TInstance, Object&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt den Namen eines Members zurück, welcher in der Anweisung vorkommt.
 Verhalten: Funktioniert auch für Cast-Ausdrücke und Vergleichsausdrücke.
 Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen.</p>
@@ -713,7 +737,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, <span class="xref">System.Object</span>&gt;&gt;</td>
         <td><span class="parametername">expression</span></td>
         <td><p>Anweisungsvorschrift, wie das Property zu laden ist.</p>
 </td>
@@ -755,7 +779,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName__2_Expression_Func___0___1___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName``2(Expression{Func{``0,``1}})">ExtractMemberName&lt;TInstance, TValue&gt;(Expression&lt;Func&lt;TInstance, TValue&gt;&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_ExtractMemberName__2_System_Linq_Expressions_Expression_System_Func___0___1___" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.ExtractMemberName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">ExtractMemberName&lt;TInstance, TValue&gt;(Expression&lt;Func&lt;TInstance, TValue&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt den Namen eines Members zurück, welcher in der Anweisung vorkommt.
 Verhalten: Funktioniert auch für Cast-Ausdrücke und Vergleichsausdrücke.
 Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen.</p>
@@ -777,7 +801,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TValue&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TValue&gt;&gt;</td>
         <td><span class="parametername">expression</span></td>
         <td><p>Anweisungsvorschrift, wie das Property zu laden ist.</p>
 </td>
@@ -861,7 +885,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TOut&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TOut&gt;&gt;</td>
         <td><p>Eine Expression, die die Property selektiert</p>
 </td>
       </tr>
@@ -891,7 +915,7 @@ Kommen mehrere Properties in dem Ausdruck vor, wird der Name des Ersten genommen
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByName_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByName*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByName__2_System_String_ParameterExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByName``2(System.String,ParameterExpression)">SelectPropertyByName&lt;TInstance, TOut&gt;(String, ParameterExpression)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByName__2_System_String_System_Linq_Expressions_ParameterExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByName``2(System.String,System.Linq.Expressions.ParameterExpression)">SelectPropertyByName&lt;TInstance, TOut&gt;(String, ParameterExpression)</h4>
   <div class="markdown level1 summary"><p>Erzeugt eine Expression, die die Property mit dem angegebenen Namen selektiert
 mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p>
 </div>
@@ -918,7 +942,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ParameterExpression</span></td>
+        <td><span class="xref">System.Linq.Expressions.ParameterExpression</span></td>
         <td><span class="parametername">parameter</span></td>
         <td><p>ParameterExpression, über die auf die Property zugegriffen werden soll.</p>
 </td>
@@ -935,7 +959,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TOut&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TOut&gt;&gt;</td>
         <td><p>Eine Expression, die die Property selektiert</p>
 </td>
       </tr>
@@ -958,6 +982,27 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
       <tr>
         <td><span class="parametername">TOut</span></td>
         <td><p>Typ der Property, die selektiert werden soll.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Wird geworfen, wenn <code data-dev-comment-type="paramref" class="paramref">parameter</code> null ist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Wird geworfen, wenn der Typ von <code data-dev-comment-type="paramref" class="paramref">parameter</code> von <code data-dev-comment-type="typeparamref" class="typeparamref">TInstance</code> abweicht.</p>
 </td>
       </tr>
     </tbody>
@@ -1002,7 +1047,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">LambdaExpression</span></td>
+        <td><span class="xref">System.Linq.Expressions.LambdaExpression</span></td>
         <td><p>Eine Expression, die die Property selektiert</p>
 </td>
       </tr>
@@ -1027,7 +1072,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByNameX_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByNameX*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByNameX__1_System_String_ParameterExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByNameX``1(System.String,ParameterExpression)">SelectPropertyByNameX&lt;TInstance&gt;(String, ParameterExpression)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_ExpressionHelper_SelectPropertyByNameX__1_System_String_System_Linq_Expressions_ParameterExpression_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.SelectPropertyByNameX``1(System.String,System.Linq.Expressions.ParameterExpression)">SelectPropertyByNameX&lt;TInstance&gt;(String, ParameterExpression)</h4>
   <div class="markdown level1 summary"><p>Erzeugt eine Expression, die die Property mit dem angegebenen Namen selektiert
 mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p>
 </div>
@@ -1054,7 +1099,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ParameterExpression</span></td>
+        <td><span class="xref">System.Linq.Expressions.ParameterExpression</span></td>
         <td><span class="parametername">parameter</span></td>
         <td><p>ParameterExpression, über die auf die Property zugegriffen werden soll.</p>
 </td>
@@ -1071,7 +1116,7 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">LambdaExpression</span></td>
+        <td><span class="xref">System.Linq.Expressions.LambdaExpression</span></td>
         <td><p>Eine Expression, die die Property selektiert</p>
 </td>
       </tr>
@@ -1103,7 +1148,8 @@ mit Angabe der zu verwendenden ParameterExpression für den Property-Zugriff.</p
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

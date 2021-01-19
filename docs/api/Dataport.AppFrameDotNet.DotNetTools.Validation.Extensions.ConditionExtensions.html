@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConditionExtensions
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,11 +314,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ConditionExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.html">Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ConditionExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ConditionExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -384,6 +408,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Die Collection war null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Mindestens ein Wert in der Collection war null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_ContainsElements_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.ContainsElements*"></a>
@@ -442,6 +487,22 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Der Typ des Prüfobjekts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Instanz enthält keine Elemente.</p>
 </td>
       </tr>
     </tbody>
@@ -514,6 +575,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Die Collection war null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Enumeration enthält nicht die exakte Anzahl an Werten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_HasMaximumSize_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.HasMaximumSize*"></a>
@@ -578,6 +660,27 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Der Typ der Enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Die Collection war null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Enumeration enthält mehr als die maximale Anzahl an Werten.</p>
 </td>
       </tr>
     </tbody>
@@ -650,10 +753,31 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Die Collection war null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Enumeration enthält nicht die minimale Anzahl an Werten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_Is_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.Is*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_Is__1_Dataport_AppFrameDotNet_DotNetTools_Validation_Models_Condition___0__Func___0_System_Boolean__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.Is``1(Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition{``0},Func{``0,System.Boolean},System.String)">Is&lt;T&gt;(Condition&lt;T&gt;, Func&lt;T, Boolean&gt;, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_Is__1_Dataport_AppFrameDotNet_DotNetTools_Validation_Models_Condition___0__System_Func___0_System_Boolean__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.Is``1(Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition{``0},System.Func{``0,System.Boolean},System.String)">Is&lt;T&gt;(Condition&lt;T&gt;, Func&lt;T, Boolean&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Stellt sicher, dass eine Bedingung erfüllt ist.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -678,7 +802,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
         <td><p>Die Bedingung die erfüllt sein muss.</p>
 </td>
@@ -719,6 +843,22 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Der Typ des Prüfobjekts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Bedingung wurde nicht erfüllt.</p>
 </td>
       </tr>
     </tbody>
@@ -781,6 +921,22 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Der Typ des Enums</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Objekt ist nicht definiert.</p>
 </td>
       </tr>
     </tbody>
@@ -853,6 +1009,22 @@ Verhalten: Gibt <span class="xref">true</span> zurück, wenn beide Werte <span c
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Die Objekte sind nicht identisch.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_IsNotNull_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.IsNotNull*"></a>
@@ -910,6 +1082,22 @@ Verhalten: Gibt <span class="xref">true</span> zurück, wenn beide Werte <span c
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>Der Typ des Prüfobjekts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Das <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition-1.html#Dataport_AppFrameDotNet_DotNetTools_Validation_Models_Condition_1_ObjectToVerify">ObjectToVerify</a> ist <span class="xref">null</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -976,6 +1164,22 @@ Verhalten: Gibt <span class="xref">true</span> zurück, wenn beide Werte <span c
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Der Objekt ist <span class="xref">null</span> leer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Validation_Extensions_ConditionExtensions_IsNotNullOrWhiteSpace_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.IsNotNullOrWhiteSpace*"></a>
@@ -1021,6 +1225,22 @@ Verhalten: Gibt <span class="xref">true</span> zurück, wenn beide Werte <span c
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Der Objekt ist <span class="xref">null</span>, leer oder enthält nur leere Zeichen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -1031,7 +1251,8 @@ Verhalten: Gibt <span class="xref">true</span> zurück, wenn beide Werte <span c
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

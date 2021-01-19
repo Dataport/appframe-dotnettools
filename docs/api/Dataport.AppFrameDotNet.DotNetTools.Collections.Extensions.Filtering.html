@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Filtering
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,18 +314,42 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Filtering</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.html">Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Filtering : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Filtering</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_Distinct_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.Distinct*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_Distinct__2_IEnumerable___0__Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.Distinct``2(IEnumerable{``0},Func{``0,``1})">Distinct&lt;TType, TIdentifier&gt;(IEnumerable&lt;TType&gt;, Func&lt;TType, TIdentifier&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_Distinct__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.Distinct``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">Distinct&lt;TType, TIdentifier&gt;(IEnumerable&lt;TType&gt;, Func&lt;TType, TIdentifier&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt nur eindeutige Elemente aus <code data-dev-comment-type="paramref" class="paramref">enumerable</code> anhand des <code data-dev-comment-type="paramref" class="paramref">selector</code> zurück.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -344,13 +368,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die Enumeration</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;TType, TIdentifier&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TType, TIdentifier&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>Eine Funktion um zu ermitteln, woran die Eindeutigkeit festgemacht werden kann.</p>
 </td>
@@ -367,7 +391,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Alle eindeutigen Elemente der Enumeration</p>
 </td>
       </tr>
@@ -397,7 +421,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_IEnumerable_System_String__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals(IEnumerable{System.String},System.String)">WhereEquals(IEnumerable&lt;String&gt;, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals(System.Collections.Generic.IEnumerable{System.String},System.String)">WhereEquals(IEnumerable&lt;String&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -416,7 +440,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -439,7 +463,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -448,7 +472,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_IQueryable_System_String__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals(IQueryable{System.String},System.String)">WhereEquals(IQueryable&lt;String&gt;, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_System_Linq_IQueryable_System_String__System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals(System.Linq.IQueryable{System.String},System.String)">WhereEquals(IQueryable&lt;String&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -467,7 +491,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -490,7 +514,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -499,7 +523,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_IEnumerable___0____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(IEnumerable{``0},``0)">WhereEquals&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_System_Collections_Generic_IEnumerable___0____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(System.Collections.Generic.IEnumerable{``0},``0)">WhereEquals&lt;TType&gt;(IEnumerable&lt;TType&gt;, TType)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -519,7 +543,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -542,7 +566,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -567,7 +591,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_IEnumerable___0__Expression_Func___0_System_String___System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(IEnumerable{``0},Expression{Func{``0,System.String}},System.String)">WhereEquals&lt;TInstance&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, String&gt;&gt;, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_System_Collections_Generic_IEnumerable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(System.Collections.Generic.IEnumerable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String)">WhereEquals&lt;TInstance&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, String&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -586,13 +610,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -615,7 +639,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -640,7 +664,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_IQueryable___0____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(IQueryable{``0},``0)">WhereEquals&lt;TType&gt;(IQueryable&lt;TType&gt;, TType)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_System_Linq_IQueryable___0____0_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(System.Linq.IQueryable{``0},``0)">WhereEquals&lt;TType&gt;(IQueryable&lt;TType&gt;, TType)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -660,7 +684,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -683,7 +707,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -708,7 +732,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_IQueryable___0__Expression_Func___0_System_String___System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(IQueryable{``0},Expression{Func{``0,System.String}},System.String)">WhereEquals&lt;TInstance&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, String&gt;&gt;, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__1_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String)">WhereEquals&lt;TInstance&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, String&gt;&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -727,13 +751,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -756,7 +780,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -781,7 +805,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__2_IEnumerable___0__Expression_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``2(IEnumerable{``0},Expression{Func{``0,``1}},``1)">WhereEquals&lt;TInstance, TElement&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__2_System_Collections_Generic_IEnumerable___0__System_Linq_Expressions_Expression_System_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``2(System.Collections.Generic.IEnumerable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},``1)">WhereEquals&lt;TInstance, TElement&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -801,13 +825,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TElement&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TElement&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -830,7 +854,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -860,7 +884,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__2_IQueryable___0__Expression_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``2(IQueryable{``0},Expression{Func{``0,``1}},``1)">WhereEquals&lt;TInstance, TElement&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEquals__2_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1_____1_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEquals``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},``1)">WhereEquals&lt;TInstance, TElement&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, TElement)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -880,13 +904,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TElement&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TElement&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -909,7 +933,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -939,7 +963,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__1_IEnumerable___0__System_Nullable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``1(IEnumerable{``0},System.Nullable{``0})">WhereEqualsOptional&lt;TType&gt;(IEnumerable&lt;TType&gt;, Nullable&lt;TType&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__1_System_Collections_Generic_IEnumerable___0__System_Nullable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``1(System.Collections.Generic.IEnumerable{``0},System.Nullable{``0})">WhereEqualsOptional&lt;TType&gt;(IEnumerable&lt;TType&gt;, Nullable&lt;TType&gt;)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen. Ist der Wert <span class="xref">null</span>, so wird nicht gefiltert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -959,7 +983,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -982,7 +1006,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1007,7 +1031,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__1_IQueryable___0__System_Nullable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``1(IQueryable{``0},System.Nullable{``0})">WhereEqualsOptional&lt;TType&gt;(IQueryable&lt;TType&gt;, Nullable&lt;TType&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__1_System_Linq_IQueryable___0__System_Nullable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``1(System.Linq.IQueryable{``0},System.Nullable{``0})">WhereEqualsOptional&lt;TType&gt;(IQueryable&lt;TType&gt;, Nullable&lt;TType&gt;)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen. Ist der Wert <span class="xref">null</span>, so wird nicht gefiltert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1027,7 +1051,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -1050,7 +1074,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1075,7 +1099,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__2_IEnumerable___0__Expression_Func___0___1___System_Nullable___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``2(IEnumerable{``0},Expression{Func{``0,``1}},System.Nullable{``1})">WhereEqualsOptional&lt;TInstance, TElement&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, Nullable&lt;TElement&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__2_System_Collections_Generic_IEnumerable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Nullable___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``2(System.Collections.Generic.IEnumerable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Nullable{``1})">WhereEqualsOptional&lt;TInstance, TElement&gt;(IEnumerable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, Nullable&lt;TElement&gt;)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen. Ist der Wert <span class="xref">null</span>, so wird nicht gefiltert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1095,13 +1119,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TElement&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TElement&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1124,7 +1148,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1154,7 +1178,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__2_IQueryable___0__Expression_Func___0___1___System_Nullable___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``2(IQueryable{``0},Expression{Func{``0,``1}},System.Nullable{``1})">WhereEqualsOptional&lt;TInstance, TElement&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, Nullable&lt;TElement&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereEqualsOptional__2_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0___1___System_Nullable___1__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereEqualsOptional``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Nullable{``1})">WhereEqualsOptional&lt;TInstance, TElement&gt;(IQueryable&lt;TInstance&gt;, Expression&lt;Func&lt;TInstance, TElement&gt;&gt;, Nullable&lt;TElement&gt;)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem übergebenen Wert entsprechen. Ist der Wert <span class="xref">null</span>, so wird nicht gefiltert.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1174,13 +1198,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TInstance, TElement&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TInstance, TElement&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1203,7 +1227,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TInstance&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TInstance&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1233,7 +1257,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_IEnumerable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike(IEnumerable{System.String},System.String,System.Char)">WhereLike(IEnumerable&lt;String&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_System_Collections_Generic_IEnumerable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike(System.Collections.Generic.IEnumerable{System.String},System.String,System.Char)">WhereLike(IEnumerable&lt;String&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1253,7 +1277,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -1282,7 +1306,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1291,7 +1315,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_IQueryable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike(IQueryable{System.String},System.String,System.Char)">WhereLike(IQueryable&lt;String&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_System_Linq_IQueryable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike(System.Linq.IQueryable{System.String},System.String,System.Char)">WhereLike(IQueryable&lt;String&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1311,7 +1335,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -1340,7 +1364,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1349,7 +1373,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike__1_IEnumerable___0__Expression_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike``1(IEnumerable{``0},Expression{Func{``0,System.String}},System.String,System.Char)">WhereLike&lt;TType&gt;(IEnumerable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike__1_System_Collections_Generic_IEnumerable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike``1(System.Collections.Generic.IEnumerable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String,System.Char)">WhereLike&lt;TType&gt;(IEnumerable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1369,13 +1393,13 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1404,7 +1428,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1429,7 +1453,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike__1_IQueryable___0__Expression_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike``1(IQueryable{``0},Expression{Func{``0,System.String}},System.String,System.Char)">WhereLike&lt;TType&gt;(IQueryable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLike__1_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLike``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String,System.Char)">WhereLike&lt;TType&gt;(IQueryable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1449,13 +1473,13 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1484,7 +1508,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1509,7 +1533,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_IEnumerable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional(IEnumerable{System.String},System.String,System.Char)">WhereLikeOptional(IEnumerable&lt;String&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_System_Collections_Generic_IEnumerable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional(System.Collections.Generic.IEnumerable{System.String},System.String,System.Char)">WhereLikeOptional(IEnumerable&lt;String&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen. Ist der Filter leer, wird nicht gefiltert.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1529,7 +1553,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -1558,7 +1582,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1567,7 +1591,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_IQueryable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional(IQueryable{System.String},System.String,System.Char)">WhereLikeOptional(IQueryable&lt;String&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_System_Linq_IQueryable_System_String__System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional(System.Linq.IQueryable{System.String},System.String,System.Char)">WhereLikeOptional(IQueryable&lt;String&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen. Ist der Filter leer, wird nicht gefiltert.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1587,7 +1611,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
@@ -1616,7 +1640,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1625,7 +1649,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional__1_IEnumerable___0__Expression_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional``1(IEnumerable{``0},Expression{Func{``0,System.String}},System.String,System.Char)">WhereLikeOptional&lt;TType&gt;(IEnumerable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional__1_System_Collections_Generic_IEnumerable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional``1(System.Collections.Generic.IEnumerable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String,System.Char)">WhereLikeOptional&lt;TType&gt;(IEnumerable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen. Ist der Filter leer, wird nicht gefiltert.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1645,13 +1669,13 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1680,7 +1704,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1705,7 +1729,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional__1_IQueryable___0__Expression_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional``1(IQueryable{``0},Expression{Func{``0,System.String}},System.String,System.Char)">WhereLikeOptional&lt;TType&gt;(IQueryable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereLikeOptional__1_System_Linq_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0_System_String___System_String_System_Char_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereLikeOptional``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.String,System.Char)">WhereLikeOptional&lt;TType&gt;(IQueryable&lt;TType&gt;, Expression&lt;Func&lt;TType, String&gt;&gt;, String, Char)</h4>
   <div class="markdown level1 summary"><p>Filtert alle Einträge die dem Like-Statement entsprechen. Ist der Filter leer, wird nicht gefiltert.
 Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der Liste dürfen nicht null sein.</p>
 </div>
@@ -1725,13 +1749,13 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><span class="parametername">queryable</span></td>
         <td><p>Die zu filternde Auflistung</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TType, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">valueSelector</span></td>
         <td><p>Selektionslogik für das Element des Objekts</p>
 </td>
@@ -1760,7 +1784,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IQueryable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste</p>
 </td>
       </tr>
@@ -1785,7 +1809,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereNotNull_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereNotNull*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereNotNull__1_IEnumerable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereNotNull``1(IEnumerable{``0})">WhereNotNull&lt;TType&gt;(IEnumerable&lt;TType&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Collections_Extensions_Filtering_WhereNotNull__1_System_Collections_Generic_IEnumerable___0__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})">WhereNotNull&lt;TType&gt;(IEnumerable&lt;TType&gt;)</h4>
   <div class="markdown level1 summary"><p>Filtert die Elemente aus einer Liste, die <span class="xref">null</span> sind.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1804,7 +1828,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><span class="parametername">enumerable</span></td>
         <td><p>Die Enumeration</p>
 </td>
@@ -1821,7 +1845,7 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TType&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TType&gt;</td>
         <td><p>Die gefilterte Liste.</p>
 </td>
       </tr>
@@ -1853,7 +1877,8 @@ Verhalten: Wildcards werden nur am Anfang und Ende unterstützt. Elemente in der
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

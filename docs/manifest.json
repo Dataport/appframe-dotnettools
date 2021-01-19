@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/git/AppFrame-DotNetTools/_Dokumentation",
+  "source_base_path": "C:/TFS-Herakles-Agent1/_work/10/s/_Dokumentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.ExpressionHelper.html",
-          "hash": "DYud2fJfiaWWDKJU8GxY1w=="
+          "hash": "axpNzBcLllY0PG9jEhtEqQ=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Adding.html",
-          "hash": "tKQFljdLQa8mHdVYAMpkLQ=="
+          "hash": "mqFR6f6CU5NwRWtBjxy4sQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Checking.html",
-          "hash": "70UNHtOtmzAnzzniKsGG6A=="
+          "hash": "xmOutvFRosPBGTeLviYukA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Execution.html",
-          "hash": "U8aVPT8cmwKxx3FOswXETw=="
+          "hash": "p+RUQ1fhkZaA2UcMZYdyaQ=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.ExpressionExtensions.html",
-          "hash": "hq6Fil1RqpwO1X48L2Kgdg=="
+          "hash": "2sm+eCLr9U7hc9zJSBV6eQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Filtering.html",
-          "hash": "Ad+j8GOUz8+ZzqbV/k6mkA=="
+          "hash": "lzKtRVCHW58qnOAf2nBiAQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Indexing.html",
-          "hash": "CIMiGfLHjjO522ug79ikug=="
+          "hash": "XuFR2mAzuyYBnMJD+DiXDw=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.Transformation.html",
-          "hash": "2O1aUnQaTFekXDczvQFcjw=="
+          "hash": "XhKQyQcQZv41OqFD9eeHwg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Extensions.html",
-          "hash": "2YDPhSxw/wBqEFeog+ijyw=="
+          "hash": "2MvQwXzy56f2du7ds4+6mw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.PagedResult-1.html",
-          "hash": "eqEvQKbNZMBNsgRQLzTtGg=="
+          "hash": "2znXBgn7FJYG4VjgEKExKw=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.Model.html",
-          "hash": "djq1ejFgY3DEMWcrqoWGMw=="
+          "hash": "CQMIlOmeiiF/iXt/yZpQlw=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.NonRepeatableEnumerable-1.html",
-          "hash": "NygWOVEiu6heNMw+bFqQNQ=="
+          "hash": "T6acAHuzUO7IjeXsXi7ehg=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Collections.html",
-          "hash": "CKn9eZIDHn6pYwQo6f/1QA=="
+          "hash": "Wzs/HI02cVms0ejJlPzF3Q=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.ComparisonExtensions.html",
-          "hash": "D5q+LXyOJveSpE/wNGdspA=="
+          "hash": "o94wzVZSt5lDLpGCeS5qFA=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.DictionaryExtensions.html",
-          "hash": "6OF8SeSlM7BXDVgdabuJGg=="
+          "hash": "EArVucqD8WkbDt5O31c5Tg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Extensions.html",
-          "hash": "VElG7UWpBLaL2qv4MY6iYg=="
+          "hash": "k8pHuwTB8fYnM5kdu8q9eg=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.BoundaryType.html",
-          "hash": "PU7XgXkds/gIFzq+VB/X3Q=="
+          "hash": "ZDm7wbUKoMxQ/GVz2atIPA=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.IgnoreInPropertyComparisonAttribute.html",
-          "hash": "yW+L9rNSYjNymc1cOSUkyw=="
+          "hash": "JivIS5PjolwoOYUmQgANWw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.MemberComparisonResult.html",
-          "hash": "8+FJjVCWqtExL/V0Z3TG4A=="
+          "hash": "re221mIFR72VabC974raqw=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Comparison.Model.html",
-          "hash": "pFEEOpAtfQrcOzT7quO0+A=="
+          "hash": "6rPaK0Vq57nhvlH//ktvpQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.HttpStatusCodeExtensions.html",
-          "hash": "sSUr2ut4ryiaMT1Hku4xXQ=="
+          "hash": "2sAFzd7bBQsektyAo/AwgQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StreamExtensions.html",
-          "hash": "SIqVMtIautWdu29YATgT2Q=="
+          "hash": "wRfW7nNzuE+LErcYKEw6gw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.StringExtensions.html",
-          "hash": "KM3ASE0amSHv195WOMxb4Q=="
+          "hash": "RIVpLK40QZSaA8NO2F382w=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.IO.Extensions.html",
-          "hash": "oR8MB8rMWdoGigZWXtC4Gw=="
+          "hash": "cJpejAQLxdggzRWjeBN/rg=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Formatting.html",
-          "hash": "9iHXhC6XT8dbzr6oqxkffw=="
+          "hash": "3IDYJNq0BzHEIC3thgMcVw=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Percentage.html",
-          "hash": "eF4VPxMQlG/VuwWWB3vNLg=="
+          "hash": "bYlISeTcf7J3je4xoVbBXA=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.Structure.html",
-          "hash": "rmQBrCd0TIcQCwNneRGqjw=="
+          "hash": "LHumnDlrAK4dWLZSu81pHA=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Extensions.html",
-          "hash": "T5pSc+kOFjtbZJi6h18RIA=="
+          "hash": "mVQ6Z2jALZNKllQsyRsbWw=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.PercentageType.html",
-          "hash": "xNKPK2vQ3CVvDOyjkHTqgg=="
+          "hash": "YlK9a/95wV/NoUlJKeGYDw=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Numeric.Model.html",
-          "hash": "Ztq2lzhk16Wzfa4stVGpiw=="
+          "hash": "Nb5cjxW6bA11a5O4soy7Cg=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper-1.html",
-          "hash": "mjJbSQj2tQJWZla1SxSPWA=="
+          "hash": "KYlURMHrS6ggmvy7ubLIvw=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.AssemblyExtensions.html",
-          "hash": "l+WDh3nUi3y58Q1z7yOJyg=="
+          "hash": "I1YR/DETJm3U6qpu557yXA=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.EnumExtensions.html",
-          "hash": "Q4c8o7lU7roqL07KzsEIyA=="
+          "hash": "FzEXNEBKniu5CNp18F4sLQ=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.InstanceExtensions.html",
-          "hash": "3MJAMnNOegvBkCNZDWSRvQ=="
+          "hash": "7JzlLKx/jQ1RDb0jB2V15A=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.StringExtensions.html",
-          "hash": "AWarKxfzE23EfmYsJEHIXA=="
+          "hash": "PgSxgFt/CKSooDY7IsvNOg=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TransformationExtensions.html",
-          "hash": "0Wp9OPV/kUPoLS5rdLIj4A=="
+          "hash": "x8ZhP4ctZjbXwTQKBPYEcA=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeExtensions.html",
-          "hash": "rBNGywxVVdo+68C+4KVDmA=="
+          "hash": "vXXnb7NKav1uVa/AEdSEiw=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.TypeManipulationExtensions.html",
-          "hash": "YpUA2VygBXHAqJfEbozptg=="
+          "hash": "G35/PeSzUlnEHmMJUtxzLg=="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.Extensions.html",
-          "hash": "MSnt7JDwJe9N7707SZ8q8Q=="
+          "hash": "dI6px2z6qH514rWmqGO+0g=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Reflection.html",
-          "hash": "ebjvlM5x/CDmDBP5RxQkig=="
+          "hash": "TInuaLRQXsmyI124hzABRA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.BooleanExtensions.html",
-          "hash": "SR7sO1n3uD/5l5BFhYobLQ=="
+          "hash": "0p4EJ2vSmhRqMacl9Tp0dA=="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.StringExtensions.html",
-          "hash": "i4hGtO4l/MYvFf+Tvfhv+w=="
+          "hash": "aPCRAd0Xomm6lAMwq4/3rw=="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Text.Extensions.html",
-          "hash": "VqPaCecuD1qX5TTC1llOqg=="
+          "hash": "sA7sbhWImnNhQgSv1rarRg=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.DateTimeExtensions.html",
-          "hash": "YF03rtwtnaKEAYMAiUt+5Q=="
+          "hash": "mlVyF3wbQFbSL6yjIFxLtA=="
         }
       },
       "is_incremental": false,
@@ -537,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Extensions.html",
-          "hash": "1RsE6AiZGS76xVvyF+VYmg=="
+          "hash": "t03dMTD9bxATaFMRdSsOMw=="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.DateTimePart.html",
-          "hash": "O5AzyReaZN0/6vscIGva/w=="
+          "hash": "JxJfKkJVTchcjOQ7tplwIA=="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Time.Model.html",
-          "hash": "Lbg7T5o/IzS+sXU8voA4iw=="
+          "hash": "iLiasBDanQB+ohHZpzRVUg=="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.ConditionExtensions.html",
-          "hash": "3byiOnh/HO0bAPc4Ig7b5g=="
+          "hash": "f4elzJrqtbAEnoMqMp3geg=="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Extensions.html",
-          "hash": "3JXUuYgXF0ghnd0ZJbp5Sw=="
+          "hash": "IZRQb/o07V5PI9tCfE3FzQ=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Condition-1.html",
-          "hash": "y1v5cbDhfdIreUNQ+5PdKQ=="
+          "hash": "5DI6FQUU9MoqUQH9RYKBzw=="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.Severity.html",
-          "hash": "7ZmRelrtoFMnKWo2bPGwdQ=="
+          "hash": "tbqTYHmZ2hXSRcR52l/X2w=="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Models.html",
-          "hash": "SQX2O53D9+cAU80STvc5Sg=="
+          "hash": "zPJDh4g+dLsTYZSuDHVAOQ=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.ValidationResults.html",
-          "hash": "R218Pxq+EPdKmtl+V1FYZA=="
+          "hash": "g6Qa6G4QVUZ9G5GZx2qA0w=="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.Verify.html",
-          "hash": "4QLEFpLZvzFCVLFxFvN8fA=="
+          "hash": "QRXMe67AMdUyedS1SxRJcA=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Dataport.AppFrameDotNet.DotNetTools.Validation.html",
-          "hash": "Ani4OotzfZpz3Ab3+lhLYQ=="
+          "hash": "odRPVH7zXjE3RvUPsBF9zg=="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "pou6UjTV/WZypbBYUnusBw=="
+          "hash": "mQ3iO2Nxb51npKz/UifF3A=="
         }
       },
       "is_incremental": false,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Changes.html",
-          "hash": "fOyEmuS1TP+ZEje3rssnnw=="
+          "hash": "QDf5xKVmNpCJFHiSGbTlfQ=="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Content.html",
-          "hash": "hHtVlgXnLBvEf7v1SsIUPw=="
+          "hash": "10NPCszourrh52MU7JunAg=="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Einleitung.html",
-          "hash": "eM1xsDIe/5PPz7LkVdb+vA=="
+          "hash": "zNqgQb5NGpJR8F0DA6DVgA=="
         }
       },
       "is_incremental": false,
@@ -729,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Migration.html",
-          "hash": "4pNCzxiybSf3/tIrEFRuVA=="
+          "hash": "kUCmfFPstw0jfFP5pCcs6g=="
         }
       },
       "is_incremental": false,
@@ -775,7 +775,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "hZ9z0qfa6ire2IFS98jfDA=="
+          "hash": "opm3m/EL+es95FMEmlTlsQ=="
         }
       },
       "is_incremental": false,
@@ -798,11 +798,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
@@ -835,8 +835,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

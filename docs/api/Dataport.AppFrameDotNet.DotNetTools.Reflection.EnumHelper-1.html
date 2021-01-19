@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EnumHelper&lt;TEnum&gt;
    | AppFrameDotNet.DotNetTools ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../images/appFrame.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -314,11 +314,36 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">EnumHelper&lt;TEnum&gt;</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.DotNetTools.Reflection.html">Dataport.AppFrameDotNet.DotNetTools.Reflection</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.DotNetTools.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_EnumHelper_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class EnumHelper&lt;TEnum&gt; : object where TEnum : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public static class EnumHelper&lt;TEnum&gt;
+    where TEnum : Enum</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -359,7 +384,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>&gt;</td>
         <td><p>Die Dictionary-Representation des Enums</p>
 </td>
       </tr>
@@ -386,7 +411,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;TKey, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, <span class="xref">System.String</span>&gt;</td>
         <td><p>Die Dictionary-Representation des Enums</p>
 </td>
       </tr>
@@ -473,6 +498,22 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
       <tr>
         <td><span class="parametername">TOut</span></td>
         <td><p>Der neue Typ des Wertes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Das Parsen funktioniert nicht ODER (bei strict = true) nicht alle Ausprägungen des Enums sind im Zielenum enthalten.</p>
 </td>
       </tr>
     </tbody>
@@ -657,7 +698,7 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TEnum&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TEnum&gt;</td>
         <td><p>Alle Values des Enums.</p>
 </td>
       </tr>
@@ -666,7 +707,7 @@ Im ungesicherten Modus (strict = false) wird zuerst anhand des Namens, dann anha
   
   
   <a id="Dataport_AppFrameDotNet_DotNetTools_Reflection_EnumHelper_1_GetValuesWhereAttribute_" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper`1.GetValuesWhereAttribute*"></a>
-  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_EnumHelper_1_GetValuesWhereAttribute__1_Func___0_System_Boolean__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper`1.GetValuesWhereAttribute``1(Func{``0,System.Boolean})">GetValuesWhereAttribute&lt;TAttribute&gt;(Func&lt;TAttribute, Boolean&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_DotNetTools_Reflection_EnumHelper_1_GetValuesWhereAttribute__1_System_Func___0_System_Boolean__" data-uid="Dataport.AppFrameDotNet.DotNetTools.Reflection.EnumHelper`1.GetValuesWhereAttribute``1(System.Func{``0,System.Boolean})">GetValuesWhereAttribute&lt;TAttribute&gt;(Func&lt;TAttribute, Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Gibt alle Values des Enums anhand eines Predikats über ein Attribut an den Membern zurück.
 Verhalten: Member die nicht über das Attribut verfügen werden ignoriert.</p>
 </div>
@@ -687,7 +728,7 @@ Verhalten: Member die nicht über das Attribut verfügen werden ignoriert.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;TAttribute, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TAttribute, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">condition</span></td>
         <td><p>Bedingung, welche die Attribute erfüllen müssen.</p>
 </td>
@@ -704,7 +745,7 @@ Verhalten: Member die nicht über das Attribut verfügen werden ignoriert.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TEnum&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TEnum&gt;</td>
         <td><p>Alle Values deren Attribute die übergebene Bedingung erfüllen.</p>
 </td>
       </tr>
@@ -780,7 +821,8 @@ Verhalten: Member die nicht über das Attribut verfügen werden ignoriert.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
