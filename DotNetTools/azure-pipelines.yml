@@ -24,7 +24,7 @@ resources:
     - repository: templates
       type: git
       name: \!BuildTemplates
-      ref: refs/tags/v1.1
+      ref: refs/tags/v1.3.2
 
 steps:
 - template: appframedotnet-package.yml@templates

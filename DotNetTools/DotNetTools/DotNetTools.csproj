@@ -5,14 +5,22 @@
     <AssemblyName>Dataport.AppFrameDotNet.DotNetTools</AssemblyName>
     <RootNamespace>Dataport.AppFrameDotNet.DotNetTools</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.3.0</Version>
+    <Version>3.3.1</Version>
     <Description>Toolsammlung zur Ergänzung von .NET-Basistypen und Basisfunktionen.</Description>
     <Authors>Dataport AppFrameDotNet DotNetTools</Authors>
     <Company>Dataport</Company>
     <Product>AppFrameDotNet</Product>
     <Copyright>Dataport 2020</Copyright>
     <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <PackageIcon>appframe.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\appframe.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="if not exist &quot;$(TargetDir)_Dokumentation&quot; mkdir &quot;$(TargetDir)_Dokumentation&quot;&#xD;&#xA;XCOPY &quot;$(SolutionDir)..\_Dokumentation&quot; &quot;$(TargetDir)_Dokumentation&quot; /S /Y" />
