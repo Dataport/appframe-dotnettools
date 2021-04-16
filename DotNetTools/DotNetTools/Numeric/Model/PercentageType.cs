@@ -1,7 +1,5 @@
 ﻿namespace Dataport.AppFrameDotNet.DotNetTools.Numeric.Model
 {
-    // Test für Anpassung an der automatischen GitHub-Synchronisierung
-
     /// <summary>
     /// Gibt an, wie eine prozentuale Darstellung erfolgen soll.
     /// </summary>
